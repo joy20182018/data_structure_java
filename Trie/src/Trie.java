@@ -1,6 +1,6 @@
 import java.util.TreeMap;
 
-public class Trie {   // 多叉树
+public class Trie {
 
     private class Node{
 
