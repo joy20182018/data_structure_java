@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5259e57b-95c8-4e53-aa49-ff5b9732bb0b" name="Default Changelist" comment="" />
+    <list default="true" id="5259e57b-95c8-4e53-aa49-ff5b9732bb0b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../AVLTree/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AVLTree/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AVLTree/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AVLTree/AVLTree.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UnionFind/src/UnionFind4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UnionFind/src/UnionFind5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UnionFind/src/UnionFind6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../211-word-dictionary/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../211-word-dictionary/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Trie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Trie/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnionFind/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UnionFind/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnionFind/src/UnionFind2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UnionFind/src/UnionFind2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnionFind/src/UnionFind3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UnionFind/src/UnionFind3.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,12 +31,20 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1UYfcrSGKArAN92nLqa7akjUErk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">

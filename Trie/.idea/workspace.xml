@@ -26,7 +26,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BST" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../211-word-dictionary" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -66,10 +66,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1575684855945">
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1576480086072">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1575684855945" />
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1576480086072" />
     <state x="669" y="153" key="new project wizard" timestamp="1575600528936">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

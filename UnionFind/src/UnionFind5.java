@@ -1,17 +1,17 @@
-public class UnionFind3 implements UF{   // 第三版并查集：基于每颗树的大小对树进行合并
+public class UnionFind5 implements UF{   // 第五版并查集：基于路径压缩进行合并
 
     private int[] parent;   // 表示第i个元素指向哪个节点
 
     // 基于这个值进行优化，防止出现有的节点过长，形成链表
-    private int[] sz;   // sz[i]表示以i为根的集合中元素的个数
+    private int[] rank;   // rank[i]表示以i为根的集合所表示的树的层数
 
-    public UnionFind3(int size){
+    public UnionFind5(int size){
         parent = new int[size];
-        sz = new int[size];
+        rank = new int[size];
 
-        for (int i = 0; i < size; i ++) {
+        for (int i = 0; i < size; i ++)  {
             parent[i] = i;
-            sz[i] = i;
+            rank[i] = i;
         }
     }
 
@@ -27,8 +27,11 @@ public class UnionFind3 implements UF{   // 第三版并查集：基于每颗树
         if (p < 0 || p > parent.length)
             throw new IllegalArgumentException("p is out of bound");
 
-        while (p != parent[p])   // 从这个元素所在的节点开始向上查找，直至找见这个元素所在树的根节点
+        while (p != parent[p]) {   // 从这个元素所在的节点开始向上查找，直至找见这个元素所在树的根节点
+            // 这行代码即为路径压缩的过程
+            parent[p] = parent[parent[p]];   // 寻找该节点父亲的父亲
             p = parent[p];
+        }
         return p;
     }
 
@@ -53,15 +56,18 @@ public class UnionFind3 implements UF{   // 第三版并查集：基于每颗树
         }
 
 
-        // 根据两个元素所在树的元素个数不同判断合并方向
-        // 将元素个数少的集合合并到元素个数多的集合上
-        if (sz[pROOT] < sz[qROOT]) {
+        // 根据两个元素所在树的rank个数不同判断合并方向
+        // 将rank低的集合合并到rank高的集合上
+        // rank其实不代表树的深度
+        if (rank[pROOT] < rank[qROOT]) {
             parent[pROOT] = qROOT;
-            sz[qROOT] += sz[pROOT];
         }
-        else{
+        else if (rank[qROOT] < rank[pROOT]){
             parent[qROOT] = pROOT;
-            sz[pROOT] += qROOT;
+        }
+        else{   // rank[qROOT] == rank[pROOT]
+            parent[qROOT] = pROOT;
+            rank[pROOT] += 1;
         }
     }
 }

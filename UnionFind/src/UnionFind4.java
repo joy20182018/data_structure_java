@@ -1,12 +1,17 @@
-public class UnionFind2 implements UF{   // 第二版并查集：利用树结构实现并查集，森林结构
+public class UnionFind4 implements UF{   // 第四版并查集：基于每颗树的深度对树进行合并
 
     private int[] parent;   // 表示第i个元素指向哪个节点
 
-    public UnionFind2(int size){
-        parent = new int[size];
+    private int[] rank;   // rank[i]表示以i为根的集合所表示的树的层数
 
-        for (int i = 0; i < size; i ++)
+    public UnionFind4(int size){
+        parent = new int[size];
+        rank = new int[size];
+
+        for (int i = 0; i < size; i ++)  {
             parent[i] = i;
+            rank[i] = i;
+        }
     }
 
     @Override
@@ -21,9 +26,7 @@ public class UnionFind2 implements UF{   // 第二版并查集：利用树结构
         if (p < 0 || p > parent.length)
             throw new IllegalArgumentException("p is out of bound");
 
-        while (p != parent[p])
-            // 从这个元素所在的节点开始向上查找，直至找见这个元素所在树的根节点
-            // 根节点为集合值等于自己id值
+        while (p != parent[p])   // 从这个元素所在的节点开始向上查找，直至找见这个元素所在树的根节点
             p = parent[p];
         return p;
     }
@@ -47,6 +50,19 @@ public class UnionFind2 implements UF{   // 第二版并查集：利用树结构
         if (pROOT == qROOT){
             return;
         }
-        parent[pROOT] = qROOT;
+
+
+        // 根据两个元素所在树的rank个数不同判断合并方向
+        // 将rank低的集合合并到rank高的集合上
+        if (rank[pROOT] < rank[qROOT]) {
+            parent[pROOT] = qROOT;
+        }
+        else if (rank[qROOT] < rank[pROOT]){
+            parent[qROOT] = pROOT;
+        }
+        else{   // rank[qROOT] == rank[pROOT]
+            parent[qROOT] = pROOT;
+            rank[pROOT] += 1;
+        }
     }
 }

@@ -120,34 +120,6 @@ public class BST<E extends Comparable<E>> {
         inOrder(node.right);
     }
 
-    // 非递归实现中序遍历
-    public void InOrderNR(Node root) {
-        if(root==null)return;
-        Stack<Node> stack = new Stack<>();
-        Node p = new Node();//辅助节点
-        p = root;
-        stack.add(p);
-        while(!stack.isEmpty()) {
-            //只要你有左孩子，就将左孩子压入栈中
-            if(p! = null &&  p.left != null) {
-                stack.add(p.left);
-                p = p.left;
-            }
-            else {
-                p = stack.pop();//弹出栈顶节点  左孩子--->根节点
-                System.out.print(p.e+" ");//访问
-
-                if((p != null) && p.right!=null) {//如果栈点元素有右孩子的话，将有节点压入栈中
-                    stack.add(p.right);
-                    p = p.right;
-                }
-                else
-                    p = null;//p=stk.pop;已经访问过p了，p设置为null
-            }
-        }
-    }
-
-
     // 二分搜索树的后序遍历
     public void postOrder(){
         postOrder(root);
