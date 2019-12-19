@@ -262,7 +262,7 @@ public class BST<E extends Comparable<E>> {
 
     // 删除掉以node为根的二分搜索树中值为e的节点, 递归算法
     // 返回删除节点后新的二分搜索树的根
-    Node remove(Node node, E e){
+    private Node remove(Node node, E e){
 
         if( node == null )
             return null;
@@ -295,7 +295,8 @@ public class BST<E extends Comparable<E>> {
 
             // 待删除节点左右子树均不为空的情况
 
-            // 找到比待删除节点大的最小节点, 即待删除节点右子树的最小节点
+            // 找到比待删除节点大的节点, 即待删除节点右子树的最小节点
+            // 或比待删除结点小的节点，即左子树最大节点
             // 用这个节点顶替待删除节点的位置
             Node successor = new Node(minimum(node.right).e);
             size ++;

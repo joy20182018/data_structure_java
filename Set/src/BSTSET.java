@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class BSTSET<E extends Comparable<E>> implements Set<E> {
     private BST<E> bst;
 
@@ -18,6 +20,11 @@ public class BSTSET<E extends Comparable<E>> implements Set<E> {
     @Override
     public void add(E e){
         bst.add(e);
+    }
+
+    @Override
+    public void remove(e E) {
+        return;
     }
 
     @Override

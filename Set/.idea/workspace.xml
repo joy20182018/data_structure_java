@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5259e57b-95c8-4e53-aa49-ff5b9732bb0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../AVLTree/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AVLTree/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AVLTree/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AVLTree/AVLTree.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UnionFind/src/UnionFind4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UnionFind/src/UnionFind5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../UnionFind/src/UnionFind6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../211-word-dictionary/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../211-word-dictionary/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Trie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Trie/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BSTSET.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BSTSET.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnionFind/out/production/UnionFind/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../UnionFind/out/production/UnionFind/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnionFind/out/production/UnionFind/UnionFind4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../UnionFind/out/production/UnionFind/UnionFind4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UnionFind/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UnionFind/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UnionFind/src/UnionFind2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UnionFind/src/UnionFind2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UnionFind/src/UnionFind3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UnionFind/src/UnionFind3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,13 +74,17 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="187" y="253" key="#com.intellij.ide.util.MemberChooser" timestamp="1575538957611">
+    <state x="187" y="253" key="#com.intellij.ide.util.MemberChooser" timestamp="1576634428575">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="187" y="253" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1575538957611" />
-    <state x="669" y="153" key="new project wizard" timestamp="1575544966822">
+    <state x="187" y="253" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1576634428575" />
+    <state x="260" y="298" key="FileChooserDialogImpl" timestamp="1576634416844">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="669" y="153" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1575544966822" />
+    <state x="260" y="298" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1576634416844" />
+    <state x="669" y="153" key="new project wizard" timestamp="1576634807341">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="669" y="153" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1576634807341" />
   </component>
 </project>
