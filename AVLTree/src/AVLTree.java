@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-// AVL平衡二叉树
+// AVL平衡二叉树，防止之前的二分搜索树退化为链表，所有操作为O(logn)级别的
 public class AVLTree<K extends Comparable<K>, V>{
 
     private class Node{
@@ -170,14 +170,17 @@ public class AVLTree<K extends Comparable<K>, V>{
         node.height = 1 + Math.max(getHeight(node.left), getHeight(node.right));
         // 计算平衡因子
         int balanceFactor = getBalanceFactor(node);
-//        System.out.println("unbalanced : " + balanceFactor);
-        if (Math.abs(balanceFactor) > 1){
-            System.out.println("unbalanced : " + balanceFactor);
-        }
+
+//        System.out.println("rotate before unbalanced : " + balanceFactor);
+//        if (Math.abs(balanceFactor) > 1){
+//            System.out.println("unbalanced : " + balanceFactor);
+//        }
 
 
         // 平衡维护
-        // 左节点的高度大于右节点高度，且这个不平衡性是由于该节点左侧的左侧多添加了一个节点
+        // 左节点的高度大于右节点高度，且这个不平衡性是由于该节点左侧的左侧多添加了
+        // 一个节点
+        // LL
         if (balanceFactor > 1 && getBalanceFactor(node.left) >= 0){
             // 使用右旋转，使这棵树进行平衡
             // 返回新的根节点
@@ -185,13 +188,31 @@ public class AVLTree<K extends Comparable<K>, V>{
         }
 
         // 平衡维护
-        // 左节点的高度大于右节点高度，且这个不平衡性是由于该节点右侧的右侧多添加了一个节点
+        // 左节点的高度大于右节点高度，且这个不平衡性是由于该节点右侧的右侧多
+        // 添加了一个节点
+        // RR
         if (balanceFactor < -1 && getBalanceFactor(node.right) <= 0){
             // 使用左旋转，使这棵树进行平衡
             // 返回新的根节点
             return leftRotate(node);
         }
 
+        // LR
+        if (balanceFactor > 1 && getBalanceFactor(node.left) < 0){
+            node.left = leftRotate(node.left);
+            return rightRotate(node);
+        }
+
+        //RL
+        if (balanceFactor < -1 && getBalanceFactor(node.right) > 0){
+            node.right = rightRotate(node.right);
+            return leftRotate(node);
+        }
+
+//        System.out.println('(' + "node.key:" + node.key + ',' +
+//                        "node.value:" +  node.value + ')');
+//        System.out.println("rotate after unbalanced : " + balanceFactor);
+//        System.out.println('\n');
         return node;
     }
 
