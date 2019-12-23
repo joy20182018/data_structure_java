@@ -31,10 +31,17 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        String filename = "Pride and Prejudice";
+        String filename = "E:/java/Map/PAP.txt";
+        BSTMap<String, Integer>bstMap = new BSTMap<>();
+        double time1 = testMap(bstMap, filename);
+        System.out.println("BSTMap : " + time1 + " s");
 
-        System.out.println("BSTMap : " + testMap(BSTMap, filename) + " s");
+        LinkedListMap<String, Integer> linkedListMap = new LinkedListMap<>();
+        double time2 = testMap(bstMap, filename);
+        System.out.println("LinkedListMap : " + time2 + " s");
 
-        System.out.println("LinkedListMap : " + testMap(LinkedListMap, filename) + " s");
+        AVLMap<String, Integer> avlMap = new AVLMap<>();
+        double time3 = testMap(avlMap, filename);
+        System.out.println("AVLMap : " + time3 + " s");
     }
 }
