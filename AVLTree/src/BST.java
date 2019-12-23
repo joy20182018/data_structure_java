@@ -82,13 +82,13 @@ public class BST<K extends Comparable<K>, V>{
     }
 
     // 更新操作
-    public void set(K key, V newvalue) {
+    public void set(K key, V newValue) {
         Node node = getNode(root, key);
 
         if (node == null)
             throw new IllegalArgumentException(key  + " deesn`t exists");
 
-        node.value = newvalue;
+        node.value = newValue;
     }
 
     // 返回以node为根的二分搜索树的最小值所在的节点

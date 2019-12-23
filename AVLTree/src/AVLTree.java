@@ -88,6 +88,7 @@ public class AVLTree<K extends Comparable<K>, V>{
     }
 
     // 获得节点node的平衡因子
+    // 左子树高度 - 右子树高度
     private int getBalanceFactor(Node node){
         if (node == null)
             return 0;
@@ -242,13 +243,13 @@ public class AVLTree<K extends Comparable<K>, V>{
     }
 
     // 更新操作
-    public void set(K key, V newvalue) {
+    public void set(K key, V newValue) {
         Node node = getNode(root, key);
 
         if (node == null)
-            throw new IllegalArgumentException(key  + " deesn`t exists");
+            throw new IllegalArgumentException(key  + " doesn`t exists");
 
-        node.value = newvalue;
+        node.value = newValue;
     }
 
     // 返回以node为根的二分搜索树的最小值所在的节点
@@ -258,20 +259,20 @@ public class AVLTree<K extends Comparable<K>, V>{
         return minimum(node.left);
     }
 
-    // 删除掉以node为根的二分搜索树中的最小节点
-    // 返回删除节点后新的二分搜索树的根
-    private Node removeMin(Node node){
-
-        if(node.left == null){
-            Node rightNode = node.right;
-            node.right = null;
-            size --;
-            return rightNode;
-        }
-
-        node.left = removeMin(node.left);
-        return node;
-    }
+//    // 删除掉以node为根的二分搜索树中的最小节点
+//    // 返回删除节点后新的二分搜索树的根
+//    private Node removeMin(Node node){
+//
+//        if(node.left == null){
+//            Node rightNode = node.right;
+//            node.right = null;
+//            size --;
+//            return rightNode;
+//        }
+//
+//        node.left = removeMin(node.left);
+//        return node;
+//    }
 
 
     // 从二分搜索树中删除键为key的节点
@@ -295,45 +296,95 @@ public class AVLTree<K extends Comparable<K>, V>{
             return null;
         }
 
+        Node retNode;   // 暂存返回的新子树根节点
+
         if (key.compareTo(node.key) < 0){
             node.left = remove(node.left, key);
-            return node;
+            retNode = node;
         }
         else if (key.compareTo(node.key) > 0){
             node.right = remove(node.right, key);
-            return node;
+            retNode = node;
         }
         else{   // key.compareTo(node.key) == 0
 
-            // 待删除节点左子树为空的情况
-            if (node.left == null){
+            if (node.left == null) {
+                // 待删除节点左子树为空的情况
                 // 此时的node为待删除节点
                 Node rightNode = node.right;
                 node.right = null;
-                size --;
-                return rightNode;   // 返回右子树根节点
+                size--;
+                retNode = rightNode;   // 返回右子树根节点
             }
-
-            // 待删除节点右子树为空的情况
-            if (node.right == null){
+            else if (node.right == null){
+                // 待删除节点右子树为空的情况
                 Node leftNode = node.left;
                 node.left = null;
                 size --;
-                return leftNode;
+                retNode = leftNode;
             }
+            else{
 
-            // 待删除节点左右子树都不为空的情况
-            // 找到比待删除节点大的节点, 即待删除节点右子树的最小节点
-            // 或比待删除结点小的节点，即左子树最大节点
-            // 用这个节点顶替待删除节点的位置
-            Node successor = minimum(node.right);
-            successor.right = removeMin(node.right);
-            successor.left = node.left;
+                // 待删除节点左右子树都不为空的情况
+                // 找到比待删除节点大的节点, 即待删除节点右子树的最小节点
+                // 或比待删除结点小的节点，即左子树最大节点
+                // 用这个节点顶替待删除节点的位置
+                Node successor = minimum(node.right);
+                successor.right = remove(node.right, successor.key);
+                successor.left = node.left;
 
-            node.left = node.right = null;
+                node.left = node.right = null;
 
-            return successor;
+                retNode = successor;
+            }
         }
+
+        if (retNode == null)
+            return null;
+
+        /*
+        自平衡处理
+         */
+
+        // 更新height
+        retNode.height = 1 + Math.max(getHeight(retNode.left), getHeight(retNode.right));
+        // 计算平衡因子
+        int balanceFactor = getBalanceFactor(retNode);
+
+
+        // 平衡维护
+        // 左节点的高度大于右节点高度，且这个不平衡性是由于该节点左侧的左侧多添加了
+        // 一个节点
+        // LL
+        if (balanceFactor > 1 && getBalanceFactor(retNode.left) >= 0){
+            // 使用右旋转，使这棵树进行平衡
+            // 返回新的根节点
+            return rightRotate(retNode);
+        }
+
+        // 平衡维护
+        // 左节点的高度大于右节点高度，且这个不平衡性是由于该节点右侧的右侧多
+        // 添加了一个节点
+        // RR
+        if (balanceFactor < -1 && getBalanceFactor(retNode.right) <= 0){
+            // 使用左旋转，使这棵树进行平衡
+            // 返回新的根节点
+            return leftRotate(retNode);
+        }
+
+        // LR
+        if (balanceFactor > 1 && getBalanceFactor(retNode.left) < 0){
+            retNode.left = leftRotate(retNode.left);
+            return rightRotate(retNode);
+        }
+
+        //RL
+        if (balanceFactor < -1 && getBalanceFactor(retNode.right) > 0){
+            retNode.right = rightRotate(retNode.right);
+            return leftRotate(retNode);
+        }
+
+        return retNode;
     }
 
     public static void main(String[] args) {
@@ -360,6 +411,13 @@ public class AVLTree<K extends Comparable<K>, V>{
 
             System.out.println("is BST: " + map.isBST());
             System.out.println("is balanced: " + map.isBalanced());
+
+            for (String word : words){
+                map.remove(word);
+                System.out.println(word);
+                if (!map.isBST() || !map.isBalanced())
+                    throw new RuntimeException("error");
+            }
         }
     }
 
