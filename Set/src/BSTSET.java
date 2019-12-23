@@ -1,9 +1,9 @@
-import javax.swing.*;
+
 
 public class BSTSET<E extends Comparable<E>> implements Set<E> {
     private BST<E> bst;
 
-    public BSTSet(){
+    public BSTSET(){
         bst = new BST<>();
     }
 

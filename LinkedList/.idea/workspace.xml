@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6641aee7-706d-48ba-8fc7-aa8c95001b87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Map/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Map/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Map/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Map/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Map/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Map/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Map/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Map/Map.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Map/src/BSTMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Map/src/FileOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Map/src/LinkedListMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Map/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Map/src/Map.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Preide and Prejudice.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Set/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Set/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Set/src/BSTSET.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Set/src/BSTSET.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UnionFind/out/production/UnionFind/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../UnionFind/out/production/UnionFind/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UnionFind/out/production/UnionFind/UnionFind4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../UnionFind/out/production/UnionFind/UnionFind4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UnionFind/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UnionFind/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="6641aee7-706d-48ba-8fc7-aa8c95001b87" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +20,12 @@
   <component name="ProjectId" id="1U6MkyukvHfJmquYm0dGdRD2psW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />

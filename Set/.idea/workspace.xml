@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5259e57b-95c8-4e53-aa49-ff5b9732bb0b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../BST/PAP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BST/PAP.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BST/Pride and Prejudice.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LinkedList/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkedList/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pride and Prejudice.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BSTSET.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BSTSET.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UnionFind/out/production/UnionFind/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../UnionFind/out/production/UnionFind/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UnionFind/out/production/UnionFind/UnionFind4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../UnionFind/out/production/UnionFind/UnionFind4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UnionFind/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UnionFind/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +27,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1UYfcrSGKArAN92nLqa7akjUErk" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -34,7 +38,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sett" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -74,14 +78,14 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="187" y="253" key="#com.intellij.ide.util.MemberChooser" timestamp="1576634428575">
+    <state x="187" y="253" key="#com.intellij.ide.util.MemberChooser" timestamp="1577069736955">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="187" y="253" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1576634428575" />
-    <state x="260" y="298" key="FileChooserDialogImpl" timestamp="1576634416844">
+    <state x="187" y="253" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1577069736955" />
+    <state x="260" y="298" key="FileChooserDialogImpl" timestamp="1577086105689">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="260" y="298" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1576634416844" />
+    <state x="260" y="298" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1577086105689" />
     <state x="669" y="153" key="new project wizard" timestamp="1576634807341">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
