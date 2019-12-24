@@ -20,7 +20,6 @@ public class PriorityQueue<E extends Comparable<E>> implements Queue<E>{
     public E getFront() {
         return maxHeap.findMax();
     }
-}
     @Override
     public void enqueue(E e) {
         maxHeap.add(e);
@@ -30,5 +29,4 @@ public class PriorityQueue<E extends Comparable<E>> implements Queue<E>{
     public E dequeue() {
         return maxHeap.extractMax();
     }
-
-
+}
