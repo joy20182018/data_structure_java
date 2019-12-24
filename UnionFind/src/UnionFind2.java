@@ -23,7 +23,7 @@ public class UnionFind2 implements UF{   // 第二版并查集：利用树结构
 
         while (p != parent[p])
             // 从这个元素所在的节点开始向上查找，直至找见这个元素所在树的根节点
-            // 根节点为集合值等于自己id值
+            // 根节点的parent值等于自己，其余节点的parent值等于各自父节点的值
             p = parent[p];
         return p;
     }
