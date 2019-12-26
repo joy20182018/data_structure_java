@@ -1,6 +1,7 @@
 import com.sun.org.apache.regexp.internal.RE;
 
 import java.util.ArrayList;
+import java.util.TreeMap;
 import java.util.Random;
 
 public class RBTree<K extends Comparable<K>, V>{
@@ -90,6 +91,8 @@ public class RBTree<K extends Comparable<K>, V>{
 
         x.color = node.color;
         node.color = RED;
+
+        return x;
     }
 
     // 颜色翻转
@@ -111,7 +114,7 @@ public class RBTree<K extends Comparable<K>, V>{
 
         if(node == null){
             size ++;
-            return new Node(key, value);
+            return new Node(key, value);   // 默认为红色节点
         }
 
         if(key.compareTo(node.key) < 0)
@@ -120,6 +123,19 @@ public class RBTree<K extends Comparable<K>, V>{
             node.right = add(node.right, key, value);
         else    // key.compareTo(node.key) == 0
             node.value = value;
+
+        // 维护红黑树性质
+        if (isRed(node.right) && !isRed(node.left))
+            node = leftRotate(node);
+
+        // 黑节点左侧连续有两个红节点
+        if (isRed(node.left) && isRed(node.left.left))
+            node = rightRotate(node);
+
+        if (isRed(node.left) && isRed(node.right))
+            flipColor(node);
+
+
 
         return node;
     }
