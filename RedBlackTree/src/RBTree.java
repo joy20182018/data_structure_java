@@ -177,7 +177,7 @@ public class RBTree<K extends Comparable<K>, V>{
     // 返回以node为根的二分搜索树的最小值所在的节点
     private Node minimum(Node node){
         if(node.left == null)
-            return node;
+             return node;
         return minimum(node.left);
     }
 

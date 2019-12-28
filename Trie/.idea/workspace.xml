@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4eedca4-0255-4e1a-8ecc-2a4c8d6039ee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../211-word-dictionary/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../211-word-dictionary/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +16,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1UYsfaGL5FKqQY6YRwMUBEBfodE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -26,7 +28,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../211-word-dictionary" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -70,9 +72,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1576480086072" />
-    <state x="669" y="153" key="new project wizard" timestamp="1575600528936">
+    <state x="669" y="153" key="new project wizard" timestamp="1577261019692">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="669" y="153" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1575600528936" />
+    <state x="669" y="153" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1577261019692" />
   </component>
 </project>
