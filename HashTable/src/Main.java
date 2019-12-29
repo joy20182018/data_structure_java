@@ -124,6 +124,28 @@ public class Main {
 
             System.out.println("ht2: " +  time + " s");
 
+            // test hashtable3
+            startTime = System.nanoTime();
+
+            HashTable3<String, Integer> ht3 = new HashTable3<>();
+            // M的选择很重要，对性能有影响
+
+            for (String word: words){
+                if (ht3.contains(word))
+                    ht3.set(word, ht3.get(word) + 1);
+                else
+                    ht3.add(word, 1);
+            }
+
+            for (String word: words)
+                ht3.contains(word);
+
+            endTime = System.nanoTime();
+
+            time = (endTime - startTime) / 1000000000.0;
+
+            System.out.println("ht3: " +  time + " s");
+
         }
     }
 }
