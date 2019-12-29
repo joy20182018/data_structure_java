@@ -1,109 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src//Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="ChangeListManager">
+    <list default="true" id="f6921c0d-ff0c-4d2a-85e1-1ba4d7281c83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../HashCode/Snipaste_2019-12-29_16-45-19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HashTable.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Snipaste_2019-12-29_15-25-47.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Snipaste_2019-12-29_15-26-22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Snipaste_2019-12-29_15-26-27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Snipaste_2019-12-29_16-42-14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Snipaste_2019-12-29_16-45-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Snipaste_2019-12-29_16-45-50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Snipaste_2019-12-29_16-46-20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Snipaste_2019-12-29_16-46-24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AVLTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FileOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HashTable2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RBTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Snipaste_2019-12-29_17-46-41.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Snipaste_2019-12-29_17-47-29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Snipaste_2019-12-29_17-47-38.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Snipaste_2019-12-29_17-48-34.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BST/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BST/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HashCode/Snipaste_2019-12-29_15-25-47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HashCode/Snipaste_2019-12-29_15-26-22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HashCode/Snipaste_2019-12-29_15-26-27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled104.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RedBlackTree/src/PAP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../RedBlackTree/src/PAP.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled104" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled104" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled104" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled104" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled104" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="company" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-    </panes>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1VeDLa1S1S3nMZwRwa3iXJ9c2wK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Map" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
+      <module name="HashTable" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="untitled104" />
-      <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
-      <method />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f6921c0d-ff0c-4d2a-85e1-1ba4d7281c83" name="Default Changelist" comment="" />
+      <created>1577604612004</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577604612004</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="326" y="299" key="FileChooserDialogImpl" timestamp="1577605771050">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="326" y="299" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1577605771050" />
+    <state width="948" height="295" key="GridCell.Tab.0.bottom" timestamp="1577613041993">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="948" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1577613041993" />
+    <state width="948" height="295" key="GridCell.Tab.0.center" timestamp="1577613041993">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="948" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1577613041993" />
+    <state width="948" height="295" key="GridCell.Tab.0.left" timestamp="1577613041993">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="948" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1577613041993" />
+    <state width="948" height="295" key="GridCell.Tab.0.right" timestamp="1577613041993">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="948" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1577613041993" />
+    <state x="577" y="304" key="SettingsEditor" timestamp="1577609631165">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="577" y="304" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1577609631165" />
+    <state x="752" y="508" width="716" height="306" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1577609604562">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="752" y="508" width="716" height="306" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577609604562" />
   </component>
 </project>
-
