@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f858c46-4f33-4b78-bce9-8d6000136920" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Trie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Trie/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HashTable/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HashTable/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HashTable/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HashTable/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HashTable/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HashTable/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HashTable/untitled104.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
