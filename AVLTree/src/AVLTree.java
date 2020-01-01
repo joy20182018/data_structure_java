@@ -124,7 +124,15 @@ public class AVLTree<K extends Comparable<K>, V>{
     }
 
     /*
-    对节点有、进行向左旋转，返回旋转后新的根节点x
+    对y节点有进行向左旋转，返回旋转后新的根节点x
+                 y                                    x
+                / \                                  / \
+               T4   x         向左旋转（y）           y    z
+                   / \       ---------->          / \   / \
+                  T3  z                          T4 T3 T1 T2
+                     / \
+                   T1  T2
+
 
      */
 
