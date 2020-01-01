@@ -1,14 +1,12 @@
 import color
 
+
 class Node:
-    def __init__(self, data = None, color = None):
+    def __init__(self, data=None, color=None):
         self.data = data
         self.left = None
         self.right = None
-        if color == None:
-            self.color = color.RED   # 默认加入的节点是红色的
-        else:
-            self.color = color
+        self.color = color
 
 
 # 这一个版本均实现红节点左倾的红黑树
@@ -17,14 +15,14 @@ class RBTree:
         self.root = None
         self.size = 0
 
-    def __setNode(self, data = None, color = None):
+    def __setNode(self, data):
         """
         设置节点
         :param data:
         :param color:
         :return:
         """
-        return Node(data=data, color = color.Black)
+        return Node(data=data, color=color.RED)
 
     def __getNode(self, node, data):
         """
@@ -41,8 +39,6 @@ class RBTree:
             return self.__getNode(node.left, data)
         else:
             return self.__getNode(node.right, data)
-
-
 
     # 返回节点个数
     def getSize(self):
@@ -62,7 +58,6 @@ class RBTree:
             return
 
         node.data = newData
-
 
     def isRed(self, node):
         """
@@ -95,7 +90,6 @@ class RBTree:
 
         return x
 
-
     def rightRotate(self, node):
         """
         右旋转
@@ -117,7 +111,6 @@ class RBTree:
 
         return x
 
-
     def flipColor(self, node):
         """
         颜色翻转
@@ -128,16 +121,14 @@ class RBTree:
         node.left.color = color.BLACK
         node.right.color = color.BLACK
 
-
-    def add(self,data):
+    def add(self, data):
         """
         添加元素
         :param data:
         :return:
         """
         self.root = self.__add(self.root, data)
-        self.root.color = color.BLACK   # 节点肯定是黑的
-
+        self.root.color = color.BLACK  # 节点肯定是黑的
 
     def __add(self, node, data):
 
@@ -176,8 +167,6 @@ class RBTree:
         self.__inOrder(self.root)
 
 
-
-
 if __name__ == "__main__":
     rbTree = RBTree()
 
@@ -188,6 +177,3 @@ if __name__ == "__main__":
     rbTree.add(37)
     rbTree.add(12)
     rbTree.inOrder()
-
-
-
