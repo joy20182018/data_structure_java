@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named AVLTree.h
+# Target rules for targets named main.c
 
 # Build rule for target.
-AVLTree.h: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 AVLTree.h
-.PHONY : AVLTree.h
+main.c: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 main.c
+.PHONY : main.c
 
 # fast build rule for target.
-AVLTree.h/fast:
-	$(MAKE) -f CMakeFiles\AVLTree.h.dir\build.make CMakeFiles/AVLTree.h.dir/build
-.PHONY : AVLTree.h/fast
+main.c/fast:
+	$(MAKE) -f CMakeFiles\main.c.dir\build.make CMakeFiles/main.c.dir/build
+.PHONY : main.c/fast
 
-main.obj: main.c.obj
+AVLTree.obj: AVLTree.c.obj
 
-.PHONY : main.obj
+.PHONY : AVLTree.obj
 
 # target to build an object file
-main.c.obj:
-	$(MAKE) -f CMakeFiles\AVLTree.h.dir\build.make CMakeFiles/AVLTree.h.dir/main.c.obj
-.PHONY : main.c.obj
+AVLTree.c.obj:
+	$(MAKE) -f CMakeFiles\main.c.dir\build.make CMakeFiles/main.c.dir/AVLTree.c.obj
+.PHONY : AVLTree.c.obj
 
-main.i: main.c.i
+AVLTree.i: AVLTree.c.i
 
-.PHONY : main.i
+.PHONY : AVLTree.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles\AVLTree.h.dir\build.make CMakeFiles/AVLTree.h.dir/main.c.i
-.PHONY : main.c.i
+AVLTree.c.i:
+	$(MAKE) -f CMakeFiles\main.c.dir\build.make CMakeFiles/main.c.dir/AVLTree.c.i
+.PHONY : AVLTree.c.i
 
-main.s: main.c.s
+AVLTree.s: AVLTree.c.s
 
-.PHONY : main.s
+.PHONY : AVLTree.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles\AVLTree.h.dir\build.make CMakeFiles/AVLTree.h.dir/main.c.s
-.PHONY : main.c.s
+AVLTree.c.s:
+	$(MAKE) -f CMakeFiles\main.c.dir\build.make CMakeFiles/main.c.dir/AVLTree.c.s
+.PHONY : AVLTree.c.s
 
 # Help Target
 help:
@@ -155,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... AVLTree.h
+	@echo ... main.c
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... AVLTree.obj
+	@echo ... AVLTree.i
+	@echo ... AVLTree.s
 .PHONY : help
 
 

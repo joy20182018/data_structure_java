@@ -17,8 +17,8 @@
 					<DistClean command="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;E:/java/AVLTree/AVLTree_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="AVLTree.h">
-				<Option output="E:/java/AVLTree/AVLTree_c/cmake-build-debug/AVLTree.h.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="main.c">
+				<Option output="E:/java/AVLTree/AVLTree_c/cmake-build-debug/main.c.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="E:/java/AVLTree/AVLTree_c/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -29,14 +29,14 @@
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;E:/java/AVLTree/AVLTree_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 AVLTree.h"/>
+					<Build command="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;E:/java/AVLTree/AVLTree_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 main.c"/>
 					<CompileFile command="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;E:/java/AVLTree/AVLTree_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;E:/java/AVLTree/AVLTree_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;E:/java/AVLTree/AVLTree_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="AVLTree.h/fast">
-				<Option output="E:/java/AVLTree/AVLTree_c/cmake-build-debug/AVLTree.h.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="main.c/fast">
+				<Option output="E:/java/AVLTree/AVLTree_c/cmake-build-debug/main.c.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="E:/java/AVLTree/AVLTree_c/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -47,7 +47,7 @@
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;E:/java/AVLTree/AVLTree_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 AVLTree.h/fast"/>
+					<Build command="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;E:/java/AVLTree/AVLTree_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 main.c/fast"/>
 					<CompileFile command="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;E:/java/AVLTree/AVLTree_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;E:/java/AVLTree/AVLTree_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;E:/java/AVLTree/AVLTree_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -74,8 +74,8 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/java/AVLTree/AVLTree_c/main.c">
-			<Option target="AVLTree.h"/>
+		<Unit filename="E:/java/AVLTree/AVLTree_c/AVLTree.c">
+			<Option target="main.c"/>
 		</Unit>
 		<Unit filename="E:/java/AVLTree/AVLTree_c/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

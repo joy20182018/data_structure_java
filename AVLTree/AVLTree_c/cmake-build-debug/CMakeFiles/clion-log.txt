@@ -1,4 +1,7 @@
 "D:\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" E:\java\AVLTree\AVLTree_c
 -- Configuring done
--- Generating done
--- Build files have been written to: E:/java/AVLTree/AVLTree_c/cmake-build-debug
+CMake Error at CMakeLists.txt:6 (add_executable):
+  No SOURCES given to target: AVLTree.c
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
