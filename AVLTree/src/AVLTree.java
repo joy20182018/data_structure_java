@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
 // AVL平衡二叉树，防止之前的二分搜索树退化为链表，所有操作为O(logn)级别的
 public class AVLTree<K extends Comparable<K>, V>{
@@ -59,6 +61,37 @@ public class AVLTree<K extends Comparable<K>, V>{
         inOrder(node.left, keys);
         keys.add(node.key);
         inOrder(node.right, keys);
+    }
+
+    // 二分搜索树的中序遍历,将中序遍历的结果输出
+    public void inOrderR(){
+        inOrderR(root);
+    }
+
+    private void inOrderR(Node node){
+
+        if (node == null)
+            return;
+
+        inOrderR(node.left);
+        System.out.print(node.value + " ");
+        inOrderR(node.right);
+    }
+
+    // 二分搜索树的层序遍历
+    public void levelOrder(){
+
+        Queue<AVLTree.Node> q = new LinkedList<>();
+        q.add(root);
+        while(!q.isEmpty()){
+            AVLTree.Node cur = q.remove();
+            System.out.print(cur.key + " ");
+
+            if(cur.left != null)
+                q.add(cur.left);
+            if(cur.right != null)
+                q.add(cur.right);
+        }
     }
 
     // 判断该二叉树是否是一颗平衡二叉树
@@ -396,37 +429,48 @@ public class AVLTree<K extends Comparable<K>, V>{
     }
 
     public static void main(String[] args) {
+
+        AVLTree<Integer, Integer> avl = new AVLTree<>();
+        for (int i = 30; i > 10; i --){
+            avl.add(i, i);
+        }
+        avl.inOrderR();
+        System.out.println(" ");
+        System.out.println("is BST: " + avl.isBST());
+        System.out.println("is Balanced: " + avl.isBalanced());
+        avl.levelOrder();
+
         // write your code here
 
-        System.out.println("PAP.txt");
-
-        ArrayList<String> words = new ArrayList<>();
-
-        if (FileOperation.readFile("E:/java/AVLTree/PAP.txt", words)){
-
-            System.out.println("Total words: " + words.size());
-
-            AVLTree<String, Integer> map = new AVLTree<>();
-
-            for (String word: words){
-                if (map.contains(word))
-                    map.set(word, map.get(word) + 1);
-                else
-                    map.add(word, 1);
-            }
-            System.out.println("Total different words: " + map.getSize());
-            System.out.println("Frequency of F : " + map.get("r") );
-
-            System.out.println("is BST: " + map.isBST());
-            System.out.println("is balanced: " + map.isBalanced());
-
-            for (String word : words){
-                map.remove(word);
-                System.out.println(word);
-                if (!map.isBST() || !map.isBalanced())
-                    throw new RuntimeException("error");
-            }
-        }
+//        System.out.println("PAP.txt");
+//
+//        ArrayList<String> words = new ArrayList<>();
+//
+//        if (FileOperation.readFile("E:/java/AVLTree/PAP.txt", words)){
+//
+//            System.out.println("Total words: " + words.size());
+//
+//            AVLTree<String, Integer> map = new AVLTree<>();
+//
+//            for (String word: words){
+//                if (map.contains(word))
+//                    map.set(word, map.get(word) + 1);
+//                else
+//                    map.add(word, 1);
+//            }
+//            System.out.println("Total different words: " + map.getSize());
+//            System.out.println("Frequency of F : " + map.get("r") );
+//
+//            System.out.println("is BST: " + map.isBST());
+//            System.out.println("is balanced: " + map.isBalanced());
+//
+//            for (String word : words){
+//                map.remove(word);
+//                System.out.println(word);
+//                if (!map.isBST() || !map.isBalanced())
+//                    throw new RuntimeException("error");
+//            }
+//        }
     }
 
 }
