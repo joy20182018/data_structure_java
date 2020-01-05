@@ -431,14 +431,19 @@ public class AVLTree<K extends Comparable<K>, V>{
     public static void main(String[] args) {
 
         AVLTree<Integer, Integer> avl = new AVLTree<>();
-        for (int i = 30; i > 10; i --){
+        for (int i = 20; i >= 14; i --){
             avl.add(i, i);
+            avl.levelOrder();
+            System.out.println(" ");
         }
-        avl.inOrderR();
-        System.out.println(" ");
-        System.out.println("is BST: " + avl.isBST());
-        System.out.println("is Balanced: " + avl.isBalanced());
-        avl.levelOrder();
+//        avl.inOrderR();
+//        System.out.println(" ");
+//        System.out.println("is BST: " + avl.isBST());
+//        System.out.println("is Balanced: " + avl.isBalanced());
+//        System.out.println("");
+//        System.out.println("删除19");
+//        avl.remove(19);
+//        avl.levelOrder();
 
         // write your code here
 

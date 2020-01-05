@@ -343,9 +343,12 @@ int remove(Node** root, int data){
 int main() 
 { 
     Node *root = NULL; 
-    for (int i = 10; i > 0; i --){
+    for (int i = 20; i >= 14; i --){
         // root = insert(root, i);
         add(&root, i);
+        cout << "tree structure: \n";
+        picTreeStructure(root);
+        cout << "\n";
     }
 
 
