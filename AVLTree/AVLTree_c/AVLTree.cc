@@ -235,7 +235,6 @@ void picTreeStructure(Node* node){
             que.push(n -> right);
     }
 
-    cout << "\n";
 }
 
 // 返回以node为根的二分搜索树中，data所在的节点
@@ -343,7 +342,7 @@ int remove(Node** root, int data){
 int main() 
 { 
     Node *root = NULL; 
-    for (int i = 20; i >= 14; i --){
+    for (int i = 50; i >= 0; i --){
         // root = insert(root, i);
         add(&root, i);
         cout << "tree structure: \n";
@@ -360,12 +359,12 @@ int main()
     // cout << "levelOrder: \n";
     // levelOrder(root);
 
-    cout << "tree structure: \n";
-    picTreeStructure(root);
+    // cout << "tree structure: \n";
+    // picTreeStructure(root);
     
-    cout << "remove 10 \n";
-    root = deleteNode(root, 10);
-    picTreeStructure(root);
+    // cout << "remove 10 \n";
+    // root = deleteNode(root, 10);
+    // picTreeStructure(root);
 
     return 0; 
 } 
