@@ -87,19 +87,30 @@ RL： ..................................................右侧的左侧 -- > 先
 保持“黑平衡”二叉树，红黑树不是平衡二叉树，最大高度2logn
 时间复杂度O(logn)
 默认每次添加的节点为红色节点
-如果插入的节点为右孩子，需要做一次左旋转，通过左旋转使节点变为3节点
+
+如果插入的节点为右孩子且左孩子为黑色，需要做一次左旋转
+如果左孩子为红节点且左孩子的左孩子也为红色，进行右旋转
+左右孩子都为红色需要进行颜色翻转
+
+
+
+
+
 
 红黑树性能总结、；
 对于完全的随机数据，普通的二分搜索树很好用
 
 但在极端的情况下会退化为一个链表
 
-对于查询较多的情况，AVL树很好用
+对于查询删除较少的情况，AVL树很好用
 
 红黑树牺牲了平衡性
 
 但统计性能更优（综合增删改查所有操作）
 
+引用：
+Comparison with AVL Tree
+The AVL trees are more balanced compared to Red-Black Trees, but they may cause more rotations during insertion and deletion. So if your application involves many frequent insertions and deletions, then Red Black trees should be preferred. And if the insertions and deletions are less frequent and search is a more frequent operation, then AVL tree should be preferred over Red-Black Tree.
 
 
 ### 哈希表
