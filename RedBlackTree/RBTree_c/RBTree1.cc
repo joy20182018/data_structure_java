@@ -177,7 +177,7 @@ void fixRedRed(Node *x) {
 
 // find node that do not have a left child 
 // in the subtree of the given node 
-Node *successor(Node *x) { 
+Node* successor(Node *x) { 
     Node *temp = x; 
 
     while (temp->left != NULL) 
@@ -187,7 +187,7 @@ Node *successor(Node *x) {
 } 
 
 // find node that replaces a deleted node in BST 
-Node *BSTreplace(Node *x) { 
+Node* BSTreplace(Node *x) { 
     // when node have 2 children 
     if (x->left != NULL and x->right != NULL) 
     return successor(x->right); 
@@ -205,7 +205,7 @@ Node *BSTreplace(Node *x) {
 
 // deletes the given node 
 void deleteNode(Node *v) { 
-    Node *u = BSTreplace(v); 
+    Node* u = BSTreplace(v); 
 
     // True when u and v are both black 
     bool uvBlack = ((u == NULL or u->color == BLACK) and (v->color == BLACK)); 
